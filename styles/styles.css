@@ -1,16 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background: #606EE8;
-  background-image: 
+  background-image:
     url("../grid.png"),
     linear-gradient(0deg, #606EE8 0%, rgba(61, 56, 69, 1) 100%);
   font-family: 'Nunito', sans-serif;
   font-family: 'Supermercado One', cursive;
+  font-size: 2vmin;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
   font-family: 'Supermercado One', cursive;
   color: #FF8276;
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 9vmin;
+  margin: 10px;
+  padding: 0 0 10px 0;
   font-weight: 800;
   text-shadow: -1px 0 #683CF1, 0 1px #683CF1, 1px 0 #683CF1, 0 -1px #683CF1, 5px 3px 4px #FC04CC;
   transform: skewY(-11deg);
@@ -18,6 +31,7 @@ h1 {
 }
 
 .title {
+  height: 25vh;
   background-image: repeating-linear-gradient(0deg, rgba(158, 169, 240, 0) 0px, rgba(157, 168, 240, 0.1) 20px, rgba(158, 169, 240, 1) 32px, rgba(158, 169, 240, 0.1) 38px);
 }
 
@@ -33,22 +47,14 @@ h1 {
   height: 100%;
 }
 
-.instruction {
-  background-image: repeating-linear-gradient(0deg, rgba(158, 169, 240, 0) 0px, rgba(111, 121, 200, 0.8) 9px, rgba(158, 169, 240, 1) 16px, rgba(111, 121, 200, 0.8) 23px, rgba(158, 169, 240, 0) 32px);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100vw;
-  position: relative;
-  font-weight: 900;
-}
-
-.instruction .btn{
-  font-style: oblique;
+.containcard{
+  height: 40vh;
 }
 
 .flip {
-  height: 30vh;
-  width: 50vh;
+  height:30vh;
+  width: 60vw;
+  max-width: calc(2 * 30vh);
   margin: 0 auto;
 }
 
@@ -56,7 +62,7 @@ h1 {
   background: #8993ee;
   background: radial-gradient(circle, rgba(137, 147, 238, 1) 56%, rgba(153, 83, 188, 1) 100%);
   color: #000;
-  font-size: 1rem;
+  font-size: 3vmin;
   font-weight: 600;
   text-align: center;
   border: 2px solid #3d3845;
@@ -70,6 +76,7 @@ h1 {
   background: rgb(255, 232, 212);
   background: radial-gradient(circle, rgba(255, 232, 212, 1) 70%, rgba(255, 171, 188, 1) 100%);
   color: #000;
+  font-size: 3vmin;
   text-align: center;
   border: 2px solid #3d3845;
   border-radius: 20px;
@@ -78,8 +85,25 @@ h1 {
   overflow: auto;
 }
 
-.containcard{
-  height: 35vh;
+.tickform {
+  height: 15vh;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.instruction {
+  background-image: repeating-linear-gradient(0deg, rgba(158, 169, 240, 0) 0px, rgba(111, 121, 200, 0.8) 9px, rgba(158, 169, 240, 1) 16px, rgba(111, 121, 200, 0.8) 23px, rgba(158, 169, 240, 0) 32px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+  font-weight: 900;
+}
+
+.instruction .btn{
+  font-style: oblique;
 }
 
 dialog {
@@ -95,11 +119,10 @@ dialog {
 dialog button {
   display: block;
   margin-top: 2rem;
-  width: 25%;
+  width: 50%;
   height: 44px;
   font-family: inherit;
   background-color: #8993ee;
-  font-size: large;
   font-weight: 700;
   border: 1px solid #3d3845;
   border-radius: 10px;
@@ -114,12 +137,6 @@ dialog button:hover {
 
 .totheleft{
   text-align: left;
-}
-
-.tickform {
-  padding: 30px;
-  font-size: 1.2rem;
-  font-weight: bolder;
 }
 
 .btn {
