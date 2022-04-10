@@ -180,3 +180,41 @@ dialog button:hover {
 .disappear{
   visibility: hidden;
 }
+
+@media (max-width: 700px) {
+     body {
+    font-size: 3vmin;
+    }
+
+  .flip {
+    height: 30vh;
+    width: 80vw;
+    max-width: calc(2 * 30vh);
+    margin: 0 auto;
+  }
+
+  .flip .front {
+    font-size: 4vmin;
+    font-weight: 600;
+  }
+
+  .flip .back {
+    font-size: 4vmin;
+  }
+
+  .tickform {
+    font-size: 3vmin;
+  }
+
+  dialog {
+    width: 70vw;
+    }
+
+  .smallbutt{
+    font-size: 2vmin;
+  }
+
+  .bigbutt{
+    font-size: 2vmin;
+    } 
+}
